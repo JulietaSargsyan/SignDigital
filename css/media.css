@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1460px) {
-    .big-shrift {
+    .heading1 {
       font-size: 95px;
     }
   
-    .youngAndBold {
+    .about-section {
       height: auto;
     }
   }
@@ -12,15 +12,15 @@
     
   
     @media only screen and (max-width: 1150px) {
-      .big-shrift {
+      .heading1 {
         font-size: 90px;
       }
   
-      .youngAndBold {
+      .about-section {
         height: auto;
     }
   
-    .left-side .p-32 {
+    .heading2 {
       font-size: 20px;
   }
   
@@ -33,7 +33,7 @@
       height: auto;
     }
   
-    .whatWeDo {
+    .services-section {
       padding: 170px 0;
   }
   
@@ -41,26 +41,39 @@
       padding: 0 10%;
     }
   }
+
   
   
-  
-  @media only screen and (max-width: 976px) {
-    .big-shrift {
+  @media only screen and (max-width: 1075px) {
+    .heading1 {
       font-size: 70px;
     }
   
-    .p-25p {
+    .heading2 {
       font-size: 18px;
     }
   
     .mid-shrift {
       font-size: 53px !important;
-  }
+   }
+
+   footer p {
+    font-size: 12px;
+   }
+
+   .lists ul {
+    margin-right: 15px;
+}
+
   }
   
   
-  @media only screen and (max-width: 790px) {
-    .whatWeDo {
+  @media only screen and (max-width: 800px) {
+    .heading1 {
+        font-size: 48px;
+    }
+
+    .services-section {
         padding: 170px 0 80px;
     }
   
@@ -68,17 +81,11 @@
       margin-bottom: 100px;
     }
   
-    .big-shrift {
-      font-size: 62px;
-    }
   
     .pics {
       gap: 7px;
     }
   
-    .lists ul {
-      margin-right: 110px;
-  }
   }
   
   
@@ -96,24 +103,34 @@
       margin-right: 65px;
   }
   
-    .big-shrift {
+    .heading1 {
       font-size: 48px;
     }
   
     .mid-shrift {
       font-size: 41px !important;
     }
+
+    .site-navigation {
+        width: 40px;
+    }
+
+    :root {
+        --burger-margin: 6px;
+    }
+
+
   
   }
   
   @media only screen and (max-width: 600px) {
-    .big-shrift {
+    .heading1 {
         font-size: 45px;
         text-align: center;
         white-space: unset;
     }
   
-    .p-25p {
+    .heading2 {
       font-size: 16px;
       text-align: center;
   }
@@ -130,8 +147,9 @@
       height: 30px;
     }
   
-    .youngAndBold {
+    .about-section {
       flex-direction: column;
+      padding-top: 100px;
     }
   
     .left-side {
@@ -152,6 +170,10 @@
     width: 100%;
     text-align: center;
   }
+
+  .portfolio-section {
+    padding-top: 100px;
+}
   
   .pics {
     margin-top: 50px;
@@ -159,7 +181,7 @@
     flex-direction: column;
   }
   
-  .whatWeDo {
+  .services-section {
     padding: 135px 0 80px;
     flex-direction: column;
     justify-content: space-between;
@@ -187,17 +209,17 @@
   
   }
   
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 375px) {
     #logo {
       height: 25px;
   }
   
   
-  .big-shrift {
+  .heading1 {
     font-size: 37px;
   }
   
-  .p-25p {
+  .heading2 {
     font-size: 14px;
   }
   
@@ -205,9 +227,11 @@
     margin-bottom: 23px;
   }
   
-  .whatWeDo {
+  .services-section {
     padding: 135px 0 25px;
   }
+
+ 
   
   }
   

@@ -65,7 +65,7 @@ header {
   --bar-width: 27px;
   --bar-height: 2px;
   --burger-gap: 8px;
-  --burger-margin: 18px
+  --burger-margin: 27px;
 }
 
 .site-navigation {
@@ -85,7 +85,7 @@ header {
   gap: var(--burger-gap);
   position: absolute;
   top: 47px;
-  right: var(--burger-margin);
+  left: var(--burger-margin);
   z-index: 3;
   cursor: pointer;
 }
