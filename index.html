@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="./css/portfolioPage.css">
 </head>
 <body>
+    <div class="site-navigation">
+      <label class="burger-menu">
+        <input type="checkbox">
+      </label>
+      <nav class="nav-bar">
+        <div>About us</div>
+        <div>Portfolio</div>
+        <div>Services</div>
+        <div>Contact us</div>
+      </nav>
+      <div class="page-navigation">
+        <ul class="page-navigation__list">
+          <li><a href="#homePage">hi there</a></li>
+          <li><a href="#about">who we are</a></li>
+          <li><a href="#portfolio">what we done</a></li>
+          <li><a href="#services">what we can do</a></li>
+        </ul>
+      </div>
+    </div>
     <header>
       <a href="#homePage" id="logo">
         <img src="./img/blacklogo.svg" />
@@ -19,6 +38,7 @@
     </header>
     <main>
         <section class='welcome-section' id="homePage">
+          <!-- <p class="cubic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus placeat aspernatur nemo ut commodi optio exercitationem incidunt facilis perspiciatis ea molestias saepe totam quisquam aperiam, ullam perferendis voluptatum vero dolores voluptas! Voluptatem error consectetur, reiciendis enim non magnam dignissimos deleniti expedita, quos, totam et. Illum fuga doloremque inventore corrupti?</p> -->
           <p class='heading2'>we are</p>
           <h1 class='heading1'>sign digital studio </h1>
           <a href="#portfolio">
@@ -29,7 +49,7 @@
               </div>
           </a>
         </section>
-        <section class='about-section'>
+        <section class='about-section' id="about">
           <div class='left-side'>
             <p class='heading2'>we're creative rebels driving<br/>brands to the</p>
             <h2 class='heading1' >young & bold</h2>
@@ -71,20 +91,18 @@
             </div>
           </div>
         </section>
-        <section class='services-section'>
+        <section class='services-section' id="services">
             <h2 class='heading1 whatWeDoHeading'>what we do</h2>
             <div class='lists'>
               <ul>
                 <li>Branding</li>
-                <li>Graphic Design</li>
-                <li>Logo Design</li>
                 <li>Social Media Marketing</li>
+                <li>Web Development</li>
               </ul>
               <ul>
+                <li>Graphic Design</li>
                 <li>UI/UX Web Design</li>
-                <li>Web Development</li>
-                <li>Welcome to</li>
-                <li>Welcome to</li>
+                <li>Logo Design</li>
               </ul>
             </div>
         </section>
