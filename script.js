@@ -19,4 +19,32 @@ window.onscroll = function(ev) {
 };
 
 
-// ptxni 3rd aygegortsakan zangvac, 1in taxamas, hamar 50 kisakaruuyc
+  const path = document.querySelector('#myPath');
+  const rect = document.querySelector('#rec');
+  const pathLength = path.getTotalLength();
+  const rectLength = rect.getTotalLength();
+  const step = 0.01; // Smaller value for smoother animation
+  
+  let pos = 0;
+  let angle = 0;
+  
+  function updateRect() {
+    pos += step;
+    if (pos > 1) {
+      pos = 0;
+    }
+    
+    const pt = path.getPointAtLength(pos * pathLength);
+    const prevPt = path.getPointAtLength((pos - step) * pathLength);
+    const dx = pt.x - prevPt.x;
+    const dy = pt.y - prevPt.y;
+    angle = Math.atan2(dy, dx) * 180 / Math.PI;
+    
+    rect.setAttribute('x', pt.x - rectLength / 2);
+    rect.setAttribute('y', pt.y - rectLength / 2);
+    rect.setAttribute('transform', `rotate(${angle}, ${pt.x}, ${pt.y})`);
+    
+    window.requestAnimationFrame(updateRect);
+  }
+  
+  updateRect();

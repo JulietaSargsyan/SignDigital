@@ -29,7 +29,8 @@ html {
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 
@@ -75,6 +76,8 @@ header {
   width: 80px;
   height: 100vh;
   border-left: 1px solid black;
+  background-color: white;
+  z-index: 5;
 }
 
 
@@ -193,16 +196,17 @@ header {
   .button {
     width: 230px;
     height: 52px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     background-color: white;
     border: 1px solid black;
     transform: translate(-8px, -8px);
     transition: all 0.2s ease;
     text-align: center;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: medium;
+    font-size: 16px;
+    font-weight: 900;
     border-radius: 2px;
+    font-family: Mosk, sans-serif !important;
   }
   
   .button:hover {
@@ -320,10 +324,12 @@ header {
   /* Section-Portfolio */
   
   .portfolio-section {
+    height: 100vh;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
   }
   
   .mid-shrift {
@@ -331,7 +337,7 @@ header {
   }
 
   .text-description {
-    width: 50%;
+    text-align: center;
   }
   
   
@@ -371,23 +377,26 @@ header {
   /* Section-services */
     
   .services-section {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 300px 0;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .whatWeDoHeading {
-    width: 40%;
-    white-space: unset;
-    
+   text-align: start;    
   }
   
+  .lists-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 96px;
+  }
+
   .lists {
     width: 50%;
     display: flex;
-    justify-content: space-between;
-  
   }
   
   .lists ul {
@@ -398,7 +407,13 @@ header {
   }
   
   .lists ul li {
-    margin-bottom: 18px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .button-wrapper {
+    width: 50%;
   }
   
   
@@ -406,10 +421,17 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 200px;
-  }
+  } 
   
   
 /* footer  */
+
+ .footer-wrapper {
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+ }
 
 
 
@@ -418,15 +440,21 @@ header {
     display: flex;
     justify-content: space-between;
   }
+
+  footer p {
+    font-size: 18px;
+    font-weight: 400;
+  }
   
   .social {
     display: flex;
   }
   
   .social a {
-    text-decoration: none;
     color: black;
     margin-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
 
@@ -447,5 +475,15 @@ header {
 
 
 
+svg {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+}
 
-  
+.svgText {
+  font-size: 30px;
+  color: white;
+  /* transform: rotateY(90deg); */
+}
