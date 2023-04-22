@@ -134,22 +134,35 @@ header {
   width: 0;
   opacity: 0;
   display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   right: 0;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   padding: 47px 90px;
   transition: all 700ms;
 }
 
 .nav-bar div {
   cursor: pointer;
+  color: white;
+
 }
 
 .burger-menu:has(input:checked) + .nav-bar {
-  width: 600px;
+  width: 1920px;
+  height: 100vh;
   opacity: 1;
+  background-color: #000000;
 }
+
+.burger-menu:has(input:checked) + .burger-menu::before,
+                                  .burger-menu::after,
+                                  .burger-menu input {
+  background-color: white;
+}
+
 
 .page-navigation {
   padding: 200px 0 150px;
