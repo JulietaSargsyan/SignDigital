@@ -18,33 +18,50 @@ window.onscroll = function(ev) {
     }
 };
 
+//Set nav-bar width to users inner width
 
-  const path = document.querySelector('#myPath');
-  const rect = document.querySelector('#rec');
-  const pathLength = path.getTotalLength();
-  const rectLength = rect.getTotalLength();
-  const step = 0.01; // Smaller value for smoother animation
-  
-  let pos = 0;
-  let angle = 0;
-  
-  function updateRect() {
-    pos += step;
-    if (pos > 1) {
-      pos = 0;
-    }
-    
-    const pt = path.getPointAtLength(pos * pathLength);
-    const prevPt = path.getPointAtLength((pos - step) * pathLength);
-    const dx = pt.x - prevPt.x;
-    const dy = pt.y - prevPt.y;
-    angle = Math.atan2(dy, dx) * 180 / Math.PI;
-    
-    rect.setAttribute('x', pt.x - rectLength / 2);
-    rect.setAttribute('y', pt.y - rectLength / 2);
-    rect.setAttribute('transform', `rotate(${angle}, ${pt.x}, ${pt.y})`);
-    
-    window.requestAnimationFrame(updateRect);
+const navBar = document.querySelector('.nav-bar');
+const checkbox = document.querySelector('input[type=checkbox]');
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    navBar.style.width = window.innerWidth + 'px';
+  } else {
+    navBar.style.width = 0;
   }
-  
-  updateRect();
+});
+
+
+
+// Navigation animation
+
+const welcomeSection = document.getElementById('homePage');
+const aboutSection = document.getElementById('about');
+const portfolioSection = document.getElementById('portfolio');
+const servicesSection = document.getElementById('services');
+const pageNavList = document.querySelectorAll(".page-navigation__item");
+
+
+function updateSection(section) {
+  const sectionTop = section.offsetTop;
+  const sectionHeight = sectionTop + window.innerHeight;
+
+  if(window.pageYOffset >= sectionTop && window.pageYOffset <= sectionHeight) {    
+    for(let i=0; i<pageNavList.length; i++) {
+      if(section.attributes[1].nodeValue == pageNavList[i].attributes[1].nodeValue) {
+        pageNavList[i].classList.add('active');
+      } else {
+        pageNavList[i].classList.remove('active');
+      }
+    }
+  }
+}
+
+window.addEventListener('scroll',() => updateSection(welcomeSection));
+window.addEventListener('scroll',() => updateSection(aboutSection));
+window.addEventListener('scroll',() => updateSection(portfolioSection));
+window.addEventListener('scroll',() => updateSection(servicesSection));
+
+
+
+
