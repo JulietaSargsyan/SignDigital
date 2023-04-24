@@ -4,7 +4,30 @@
     }
   
     .about-section {
-      height: auto;
+      height: 100vh;
+    }
+
+    .whatWeDoHeading {
+      text-align: center;
+    }
+
+    .lists-wrapper {
+      align-items: center;
+    }
+
+    .lists {
+      width: 100%;
+      justify-content: center;
+      gap: 280px;
+    }
+
+    .lists ul {
+      margin-right: 0;
+    }
+
+    .lists-wrapper .button-wrapper {
+      width: 100%;
+      text-align: center;
     }
   }
     
@@ -17,7 +40,7 @@
       }
   
       .about-section {
-        height: auto;
+        height: 100vh;
     }
   
     .heading2 {
@@ -99,8 +122,8 @@
       width: 185px;
     }
   
-    .lists ul {
-      margin-right: 65px;
+    .lists {
+      gap: 65px;
   }
   
     .heading1 {
@@ -150,6 +173,7 @@
     .about-section {
       flex-direction: column;
       padding-top: 100px;
+      justify-content: center;
     }
   
     .left-side {
@@ -163,7 +187,12 @@
   
     .right-side {
       width: 100%;
-      margin-top: 33px;
+      margin-top: 5px;
+      display: none;
+  }
+
+  .right-side img {
+    height: 50px;
   }
   
   .text-description {
@@ -172,6 +201,7 @@
   }
 
   .portfolio-section {
+    height: auto;
     padding-top: 100px;
 }
   
@@ -184,7 +214,7 @@
   .services-section {
     padding: 135px 0 80px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .whatWeDoHeading {
