@@ -1,3 +1,5 @@
+// Sticky-line animation
+
 window.onscroll = function(ev) {
     const line = document.getElementById('stiky-line');
     const lineA = document.getElementById('lineA');
@@ -30,6 +32,10 @@ checkbox.addEventListener('change', function() {
     navBar.style.width = 0;
   }
 });
+
+if (window.location.href.includes('services.html')) {
+   navBar.children[2].style.textDecoration = 'line-through';
+}
 
 
 

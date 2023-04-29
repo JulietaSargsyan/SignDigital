@@ -1,0 +1,29 @@
+.table__item {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.table__item:last-child {
+    border-bottom: 1px solid black;
+}
+
+.table__item h2 {
+    font-size: 48px;
+    font-family: Mosk, sans-serif !important;
+    font-weight: 900;
+}
+
+.table__item p {
+    width: 60%;
+    text-align: justify;
+}
+
+.services__table {
+    margin-bottom: 420px;
+}
+
+.footer-padding {
+    padding-bottom: 50px;
+}

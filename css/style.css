@@ -145,10 +145,25 @@ header {
   transition: all 700ms;
 }
 
-.nav-bar div {
+.nav-bar__item {
   cursor: pointer;
   color: white;
+  position: relative;
+}
 
+.nav-bar__item a {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.nav-bar__item span {
+  background-color: white;
+  height: 4px;
+  width: 720px;
+  display: block;
+  position: absolute;
+  top: 10px;
 }
 
 .burger-menu:has(input:checked) + .nav-bar {
