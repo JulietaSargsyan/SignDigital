@@ -33,8 +33,22 @@ checkbox.addEventListener('change', function() {
   }
 });
 
-if (window.location.href.includes('services.html')) {
-   navBar.children[2].style.textDecoration = 'line-through';
+
+switch (true) {
+  case window.location.href.includes('about.html'):
+    navBar.children[0].children[0].children[0].classList.add("active");
+    break;
+  case window.location.href.includes('portfolio.html'):
+    navBar.children[1].children[0].children[0].classList.add("active");
+    break;
+  case window.location.href.includes('services.html'):
+    navBar.children[2].children[0].children[0].classList.add("active");
+    break;
+  case window.location.href.includes('contact.html'):
+    navBar.children[3].children[0].children[0].classList.add("active");
+    break;
+  default:
+    break;
 }
 
 

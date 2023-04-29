@@ -12,12 +12,42 @@
     <link rel="stylesheet" href="./css/portfolioPage.css">
 </head>
 <body>
-    <header>
-      <a href="./index.html" id="logo">
-        <img src="./img/blacklogo.svg" />
-        <span class="icon-arrow-up"></span>
-      </a>
-    </header>
+  <div class="site-navigation">
+    <label class="burger-menu">
+      <input type="checkbox">
+    </label>
+    <nav class="nav-bar">
+      <div class="nav-bar__item heading1">
+        <a href="./about.html"> 
+          About us
+          <span class="line-through"></span>
+        </a>
+      </div>
+      <div class="nav-bar__item heading1">
+        <a href="./portfolio.html"> 
+          Portfolio
+          <span class="line-through"></span>
+        </a>
+      </div>
+      <div class="nav-bar__item heading1">
+        <a href="./services.html"> 
+          Services
+          <span class="line-through"></span>
+        </a>
+      </div>
+      <div class="nav-bar__item heading1">
+        <a href="./contact.html"> 
+          Contact us
+          <span class="line-through"></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <header>
+    <a href="./index.html#homePage" id="logo">
+      <img src="./img/blacklogo.svg" />
+  </a>
+  </header>
     <main class="portfolio__main">
         <h2 class="portfolio__branding">branding</h2>
         <p class="portfolio__description">We’re creative rebels driving brands to the</p>
@@ -102,5 +132,13 @@
           <div></div>
         </div>
     </main>
+    <footer class="footer-padding">
+      <p>&copy; 2021 All rights reserved.Sign Digital </p>
+      <div class='social'>
+        <a href='https://www.facebook.com/Sign-2213681662203036' target="_blank">Facebook</a>
+        <a href='https://www.instagram.com/sign_digital/' target="_blank">Instagram</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

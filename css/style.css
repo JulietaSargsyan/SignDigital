@@ -134,7 +134,7 @@ header {
 .nav-bar {
   width: 0;
   opacity: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 0;
@@ -154,21 +154,22 @@ header {
 .nav-bar__item a {
   color: white;
   text-decoration: none;
- 
+  position: relative;
 }
 
-.nav-bar__item span {
+.nav-bar__item span.active {
   background-color: white;
   height: 4px;
-  width: 720px;
+  width: 100%;
   display: block;
   position: absolute;
-  top: 10px;
+  top: 50%;
 }
 
 .burger-menu:has(input:checked) + .nav-bar {
   height: 100vh;
   opacity: 1;
+  display: flex;
   background-color: #000000;
 }
 
@@ -263,11 +264,11 @@ header {
 
 
   .lineAnimation {
-    -webkit-animation: uparrow 2s 2 ease-in-out;
+    --webkit-animation: uparrow 2s 2 ease-in-out;
   }
 
   .lineAnimationHover {
-    -webkit-animation: uparrow 2s infinite ease-in-out;
+    --webkit-animation: uparrow 2s infinite ease-in-out;
   }
 
   .stiky-line-container  a {
@@ -490,7 +491,11 @@ header {
 
 
   /* Animations */ 
-  
+  @keyframes uparrow {
+    0%  { height: 70px;  }
+    50% { height: 110px; }
+    100% {height: 70px;  }
+  }
   
   @-webkit-keyframes uparrow {
     0%  { height: 70px;  }
