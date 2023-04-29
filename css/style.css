@@ -28,6 +28,12 @@ html {
  
 }
 
+.heading3 {
+  font-size: 48px;
+  font-family: Mosk, sans-serif ;
+  font-weight: 900;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -508,7 +514,7 @@ header {
 
 
 
-svg {
+/* svg {
   width: 100%;
   position: absolute;
   overflow: hidden;
@@ -517,8 +523,8 @@ svg {
 
 .svgText {
   font-size: 30px;
-  color: white;
-}
+  color: black;
+} */
 
 
 

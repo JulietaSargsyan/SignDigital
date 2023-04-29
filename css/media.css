@@ -1,3 +1,29 @@
+@media only screen and (max-width: 1800px) {
+  .info__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info__logo img {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1560px) {
+  .heading3 {
+    font-size: 35px;
+  }
+
+  .info__content-title {
+    font-size: 20px ;
+  }
+
+  .info__content-text {
+    font-size: 13px;
+  }
+}
+
+
 @media only screen and (max-width: 1460px) {
     .heading1 {
       font-size: 95px;
@@ -41,11 +67,19 @@
   
       .about-section {
         height: 100vh;
-    }
+      }
   
     .heading2 {
       font-size: 20px;
-  }
+    }
+
+    .heading3 {
+      font-size: 30px;
+    }
+
+    .info__content-title {
+      font-size: 16px;
+    }
   
   
     .right-side img {

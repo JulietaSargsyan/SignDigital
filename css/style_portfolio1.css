@@ -1,0 +1,32 @@
+.info {
+    margin-top: 250px;
+    margin-bottom: 500px;
+}
+
+.info__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+}
+
+.info__block h3 {
+    text-align: center;
+}
+
+.info__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__content-title {
+    font-family: Mosk, sans-serif ;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.info__content-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
