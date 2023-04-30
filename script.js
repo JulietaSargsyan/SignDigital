@@ -24,32 +24,33 @@ window.onscroll = function(ev) {
 
 const navBar = document.querySelector('.nav-bar');
 const checkbox = document.querySelector('input[type=checkbox]');
+const logo = document.querySelector('#logo');
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     navBar.style.width = window.innerWidth + 'px';
-  } else {
-    navBar.style.width = 0;
-  }
+    logo.style.color = 'white';
+
+  } 
 });
 
 
-switch (true) {
-  case window.location.href.includes('about.html'):
-    navBar.children[0].children[0].children[0].classList.add("active");
-    break;
-  case window.location.href.includes('portfolio.html'):
-    navBar.children[1].children[0].children[0].classList.add("active");
-    break;
-  case window.location.href.includes('services.html'):
-    navBar.children[2].children[0].children[0].classList.add("active");
-    break;
-  case window.location.href.includes('contact.html'):
-    navBar.children[3].children[0].children[0].classList.add("active");
-    break;
-  default:
-    break;
-}
+// switch (true) {
+//   case window.location.href.includes('about.html'):
+//     navBar.children[0].children[0].children[0].classList.add("active");
+//     break;
+//   case window.location.href.includes('portfolio.html'):
+//     navBar.children[1].children[0].children[0].classList.add("active");
+//     break;
+//   case window.location.href.includes('services.html'):
+//     navBar.children[2].children[0].children[0].classList.add("active");
+//     break;
+//   case window.location.href.includes('contact.html'):
+//     navBar.children[3].children[0].children[0].classList.add("active");
+//     break;
+//   default:
+//     break;
+// }
 
 
 
@@ -81,6 +82,7 @@ window.addEventListener('scroll',() => updateSection(welcomeSection));
 window.addEventListener('scroll',() => updateSection(aboutSection));
 window.addEventListener('scroll',() => updateSection(portfolioSection));
 window.addEventListener('scroll',() => updateSection(servicesSection));
+
 
 
 

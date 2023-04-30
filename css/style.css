@@ -5,6 +5,8 @@
     font-family: 'Noto Sans';
 }
 
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -55,9 +57,9 @@ header {
   height: 29px;
   cursor: pointer;
   transition: all 1s ease-in-out;
-  color: black;
+  /* color: #268f2a; */
   text-decoration: none; 
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   top: 43px;
 }
@@ -138,16 +140,17 @@ header {
 
 /*********************/
 .nav-bar {
-  width: 0;
-  opacity: 0;
-  display: none;
+  height: 100vh;
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  background-color: #000000;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2000px;
   justify-content: center;
-  align-items: center;
-  padding: 47px 90px;
+  align-items: flex-start;
+  padding: 47px 400px;
   transition: all 700ms;
 }
 
@@ -163,20 +166,23 @@ header {
   position: relative;
 }
 
-.nav-bar__item span.active {
+.nav-bar__item span {
   background-color: white;
   height: 4px;
-  width: 100%;
+  width: 0;
   display: block;
   position: absolute;
   top: 50%;
+  left: -5%;
+  transition: width .5s ;
+}
+
+.nav-bar__item a:hover .line-through {
+  width: 110%;
 }
 
 .burger-menu:has(input:checked) + .nav-bar {
-  height: 100vh;
-  opacity: 1;
-  display: flex;
-  background-color: #000000;
+  right: 0;
 }
 
 
@@ -312,6 +318,7 @@ header {
   main {
     padding: 0 284px;
     padding: 0 10%;
+    overflow: hidden;
   }
 
   /* Section-Welcome */
@@ -513,18 +520,16 @@ header {
 
 
 
+/* SVG */
 
-/* svg {
-  width: 100%;
+.svg {
   position: absolute;
+  top: 0;
+  left: -20%;
+  width: 150%;
   overflow: hidden;
-  z-index: 0;
 }
 
-.svgText {
-  font-size: 30px;
-  color: black;
-} */
 
 
 
@@ -545,7 +550,3 @@ header {
 
 
 
-
-.svg-test {
-  background-color: #000000;
-}
