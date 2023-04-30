@@ -535,7 +535,7 @@ header {
 .cursor__circle {
   width: 40px;
   height: 40px;
-  border: 1px solid green;
+  border: 1px solid rgb(108, 0, 158);
   border-radius: 50%;
   position: fixed;
   left: 0;
@@ -553,7 +553,7 @@ header {
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: black;
+  background-color: rgb(108, 0, 158);
   border-radius: 50%;
   left: 0;
   top: 0;
