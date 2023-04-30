@@ -87,3 +87,11 @@ window.addEventListener('scroll',() => updateSection(servicesSection));
 
 
 
+// Cursor Animation 
+const circle = document.querySelector('.cursor__circle');
+const dot = document.querySelector('.cursor__dot');
+
+window.addEventListener('mousemove', (e) => {
+  circle.style.transform = `translate(${e.clientX-20}px, ${e.clientY-20}px)`;
+  dot.style.transform = `translate(${e.clientX-4}px, ${e.clientY-4}px)`;
+});
