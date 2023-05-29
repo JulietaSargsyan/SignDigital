@@ -329,7 +329,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    background-image: url(../img/Pyramid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   }
   
 /* Section-About */
@@ -431,13 +434,17 @@ header {
   
   .lists-wrapper {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-end;
+    /* justify-content: space-evenly; */
     margin-top: 96px;
   }
 
-  .lists {
+  .lists-wrapper .star-shape {
     width: 50%;
+  }
+
+  .lists {
     display: flex;
   }
   

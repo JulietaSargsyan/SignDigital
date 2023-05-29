@@ -14,71 +14,48 @@
   <!-- Cursor animation -->
   <div class="cursor__circle"></div>
   <div class="cursor__dot"></div>
-  
-    <div class="site-navigation">
-      <label class="burger-menu">
-        <input type="checkbox">
-      </label>
-      <nav class="nav-bar">
-        <div class="nav-bar__item heading1">
-          <a href="./about.html"> 
-            About us
-            <span class="line-through"></span>
-          </a>
-        </div>
-        <div class="nav-bar__item heading1">
-          <a href="./portfolio.html"> 
-            Portfolio
-            <span class="line-through"></span>
-          </a>
-        </div>
-        <div class="nav-bar__item heading1">
-          <a href="./services.html"> 
-            Services
-            <span class="line-through"></span>
-          </a>
-        </div>
-        <div class="nav-bar__item heading1">
-          <a href="./contact.html"> 
-            Contact us
-            <span class="line-through"></span>
-          </a>
-        </div>
-      </nav>
-      <div class="page-navigation">
-        <ul class="page-navigation__list">
-          <li class="page-navigation__item active" data-section="homePage"><a href="#homePage">hi there</a></li>
-          <li class="page-navigation__item" data-section="about"><a href="#about">who we are</a></li>
-          <li class="page-navigation__item" data-section="portfolio"><a href="#portfolio">what we done</a></li>
-          <li class="page-navigation__item" data-section="services"><a href="#services">what we can do</a></li>
-        </ul>
+  <!--- Site Navigation -->
+  <div class="site-navigation">
+    <label class="burger-menu">
+      <input type="checkbox">
+    </label>
+  <!----- Main Menu  ----->
+    <nav class="nav-bar">
+      <div class="nav-bar__item heading1">
+        <a href="./about.html"> 
+           About us
+          <span class="line-through"></span>
+        </a>
       </div>
+      <div class="nav-bar__item heading1">
+        <a href="./portfolio.html"> 
+          Portfolio
+          <span class="line-through"></span>
+        </a>
+      </div>
+      <div class="nav-bar__item heading1">
+        <a href="./services.html"> 
+          Services
+          <span class="line-through"></span>
+        </a>
+      </div>
+      <div class="nav-bar__item heading1">
+        <a href="./contact.html"> 
+          Contact us
+          <span class="line-through"></span>
+        </a>
+      </div>
+    </nav>
+    <!-- First Page Menu  -->
+    <div class="page-navigation">
+      <ul class="page-navigation__list">
+        <li class="page-navigation__item active" data-section="homePage"><a href="#homePage">hi there</a></li>
+        <li class="page-navigation__item" data-section="about"><a href="#about">who we are</a></li>
+        <li class="page-navigation__item" data-section="portfolio"><a href="#portfolio">what we done</a></li>
+        <li class="page-navigation__item" data-section="services"><a href="#services">what we can do</a></li>
+      </ul>
     </div>
-    <!-- <?xml version="1.0" encoding="utf-8"?>
-<svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="2335.9px" height="1337px" viewBox="0 0 2335.9 1337" style="enable-background:new 0 0 2335.9 1337;" xml:space="preserve">
-  <style type="text/css">
-	.st0{fill:none;}
-  </style>
-  <path id="curve" class="st0" d="M189.7,34.1c0,0,83.5,327.6,347.3,301.4s512.7-229.3,653.6-183.5s360.8,304.8,520.9,330.9
-	c154.3,25.1,322.7-34.4,429.2-157.3c0,0,318,411.1,45.9,727.3c0,0-132.7,176.9-465.2,90.1s-485.9,88.1-665,144.1
-	c-241.5,75.6-396.3-27.2-527.4-181.8C390.8,942.8,327.3,899,171.6,961.2c0,0-175.8-215.2-122.2-548S157.9-7.8,189.7,34.1z"/>
-  <text class="text">
-    <textPath alignment-baseline="top" xlink:href="#curve">
-      <animate attributeName="startOffset" values="0%;100%;"  begin="0s" dur="10s" repeatCount="indefinite"/>
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT - 
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT - 
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -  
-      BRANDING - UI/UX DESIGN - SMM - WEB DEVELOPMENT - LOGO DESIGN - SOCIAL CONTENT WRITING - GRAPHIC DESIGN - ADD MANAGEMENT -    
-    </textPath>
-  </text>
-</svg> -->
+  </div>
     <header>
       <a href="./index.html#homePage" id="logo">
         <img src="./img/blacklogo.svg" />
@@ -141,6 +118,10 @@
         <section class='services-section' id="services">
             <h2 class='heading1 whatWeDoHeading'>what we do</h2>
             <div class='lists-wrapper'>
+              <div class="star-shape">
+                <img src="./img/Star.svg" alt="star-shape">
+              </div>
+             <div>
               <div class="lists">
                 <ul>
                   <li>Social Media Marketing</li>
@@ -162,6 +143,7 @@
                   </a>
                 </div>
               </div>
+             </div>
             </div>
         </section>
       </main>
