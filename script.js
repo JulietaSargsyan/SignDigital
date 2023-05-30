@@ -25,32 +25,37 @@ window.onscroll = function(ev) {
 const navBar = document.querySelector('.nav-bar');
 const checkbox = document.querySelector('input[type=checkbox]');
 const logo = document.querySelector('#logo');
+const logoImg = logo.firstElementChild;
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     navBar.style.width = window.innerWidth + 'px';
-    logo.style.color = 'white';
-
-  } 
+    logoImg.src = "./img/whiteLogo.png";
+  } else {
+    logoImg.src = "./img/blacklogo.svg";
+  }
 });
 
+const starImage = document.createElement("img");
+starImage.src = "./img/whiteStar.png";
+console.log(navBar.children[0].children[0]);
 
-// switch (true) {
-//   case window.location.href.includes('about.html'):
-//     navBar.children[0].children[0].children[0].classList.add("active");
-//     break;
-//   case window.location.href.includes('portfolio.html'):
-//     navBar.children[1].children[0].children[0].classList.add("active");
-//     break;
-//   case window.location.href.includes('services.html'):
-//     navBar.children[2].children[0].children[0].classList.add("active");
-//     break;
-//   case window.location.href.includes('contact.html'):
-//     navBar.children[3].children[0].children[0].classList.add("active");
-//     break;
-//   default:
-//     break;
-// }
+switch (true) {
+  case window.location.href.includes('about.html'):
+    navBar.children[0].children[0].appendChild(starImage);
+    break;
+  case window.location.href.includes('portfolio.html'):
+    navBar.children[1].children[0].appendChild(starImage);
+    break;
+  case window.location.href.includes('services.html'):
+    navBar.children[2].children[0].appendChild(starImage);
+    break;
+  case window.location.href.includes('contact.html'):
+    navBar.children[3].children[0].appendChild(starImage);
+    break;
+  default:
+    break;
+}
 
 
 

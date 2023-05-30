@@ -68,6 +68,7 @@ header {
   height: inherit;
 }
 
+
 /* Navigation  */
 
 :root {
@@ -176,6 +177,26 @@ header {
   left: -5%;
   transition: width .5s ;
 }
+
+.nav-bar__item img {
+  animation: rotateAnimation 3s linear infinite;
+  /* animation: bounce 2s linear infinite; */
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
+/* @keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
+} */
 
 .nav-bar__item a:hover .line-through {
   width: 110%;
@@ -363,6 +384,7 @@ header {
     width: 100%;
     max-height: 100vh;
     height: auto;
+    border-radius: 0 15% 0 0 ;
   }
 
   /* Section-Portfolio */
@@ -426,6 +448,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 100px;
   }
 
   .whatWeDoHeading {
@@ -485,14 +508,15 @@ header {
 
 
   footer {
-    padding: 0 274px;
+    padding: 20px 274px;
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   footer p {
-    font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
   }
   
   .social {
@@ -502,8 +526,6 @@ header {
   .social a {
     color: black;
     margin-right: 10px;
-    font-size: 18px;
-    font-weight: 400;
   }
 
 
