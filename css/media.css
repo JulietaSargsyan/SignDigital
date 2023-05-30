@@ -104,6 +104,10 @@
     footer {
       padding: 0 10%;
     }
+
+    .lists {
+      gap: 100px;
+    }
   }
 
   
@@ -286,6 +290,43 @@
   .works-gallery {
     padding-top: 21%;
   }
+
+  /* ////////////////////////// */
+  main {
+    padding: 0 0;
+  }
+
+  .site-navigation {
+    border-left: 0;
+    background-color: transparent;
+  }
+
+  .page-navigation {
+    display: none;
+  }
+
+  .about-section {
+    padding-top: 0;
+    height: auto;
+  }
+
+  .lists-wrapper {
+    display: block;
+    margin: 0;
+  }
+
+  .lists {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .lists-wrapper .star-shape {
+    display: none;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
   
   }
   
@@ -314,6 +355,15 @@
   .nav-bar__item img {
     height: 35px;
   } 
+
+  .lists {
+    gap: 5px;
+    padding: 0 20px;
+  }
+
+  .services-section {
+    padding: 0 0 0;
+  }
 }
 
 
