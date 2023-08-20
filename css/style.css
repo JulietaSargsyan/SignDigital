@@ -11,6 +11,81 @@ html {
     scroll-behavior: smooth;
   }
 
+.intro {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  animation: hideIntro 3s forwards 3s;
+}
+
+@keyframes hideIntro {
+  to {
+    top: -3000px;
+    /* display: none; */
+  }
+}
+
+#svg-logo {
+  stroke:#000000;
+  stroke-width:2;
+  stroke-miterlimit:10;
+  fill: transparent;
+  animation: fill 2s ease forwards 2s;
+}
+
+#svg-logo path:nth-child(1) {
+  stroke-dasharray: 155px;
+  stroke-dashoffset: 155;
+  animation: animateLogo 2s ease forwards 1s;
+}
+
+#svg-logo path:nth-child(2) {
+  stroke-dasharray: 58;
+  stroke-dashoffset: 58;
+  animation: animateLogo 3s ease forwards 1s;
+}
+
+#svg-logo path:nth-child(3) {
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  animation: animateLogo 3s ease forwards 1s;
+}
+
+#svg-logo path:nth-child(4) {
+  stroke-dasharray: 185;
+  stroke-dashoffset: 185;
+  animation: animateLogo 3s ease forwards 1s;
+}
+
+#svg-logo path:nth-child(5) {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+  animation: animateLogo 3s ease forwards 1s;
+}
+
+@keyframes animateLogo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
+}
+
+
+
 
 .heading1 {
   font-family: Mosk, sans-serif !important;
@@ -353,8 +428,8 @@ header {
     background-image: url(../img/Pyramid.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* -webkit-background-attachment: fixed;
-    background-attachment: fixed; */
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
   }
   
 /* Section-About */
@@ -466,6 +541,10 @@ header {
 
   .lists-wrapper .star-shape {
     width: 50%;
+  }
+
+  .star-shape img {
+    animation: rotateAnimation 3s linear infinite;
   }
 
   .lists {
