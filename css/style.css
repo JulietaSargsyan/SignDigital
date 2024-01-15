@@ -114,7 +114,8 @@ p {
 /* Header */
 
 header {
- padding-left: 292px;    
+ padding-left: 292px; 
+ z-index: 5;   
 }
 
 #logo  {
