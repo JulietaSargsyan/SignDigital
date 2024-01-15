@@ -1,38 +1,16 @@
-// Sticky-line animation
-
-window.onscroll = function(ev) {
-    const line = document.getElementById('stiky-line');
-    const lineA = document.getElementById('lineA');
-    // let css_of_before = window.getComputedStyle(line, '::before');
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        line.style.setProperty('--beforeDisplay', 'block');
-        lineA.style.cursor = 'pointer';
-        line.style.cursor = 'pointer';
-        line.classList.add('lineAnimation');
-        line.addEventListener('mouseover', () => line.classList.add('lineAnimationHover') )
-        line.addEventListener('mouseout', () => line.classList.remove('lineAnimationHover') )
-
-    } else {
-        line.style.setProperty('--beforeDisplay', 'none')
-        lineA.style.cursor = 'default';
-        line.classList.remove('lineAnimation');
-        lineA.addEventListener('mouseover', () => lineA.classList.remove('lineAnimationHover') )
-    }
-};
-
 //Set nav-bar width to users inner width
 
 const navBar = document.querySelector('.nav-bar');
 const checkbox = document.querySelector('input[type=checkbox]');
-const logo = document.querySelector('#logo');
-const logoImg = logo.firstElementChild;
+// const logo = document.querySelector('#logo');
+// const logoImg = logo.firstElementChild;
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     navBar.style.width = window.innerWidth + 'px';
-    logoImg.src = "./img/whiteLogo.png";
+    // logoImg.src = "./img/whiteLogo.png";
   } else {
-    logoImg.src = "./img/blacklogo.svg";
+    // logoImg.src = "./img/blacklogo.svg";
   }
 });
 
@@ -102,5 +80,5 @@ window.addEventListener('mousemove', (e) => {
 });
 
 
-
+// Change logo color
 

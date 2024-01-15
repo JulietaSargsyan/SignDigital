@@ -40,25 +40,25 @@
         </label>
     <!----- Main Menu  ----->
         <nav class="nav-bar">
-            <div class="nav-bar__item heading1">
+            <div class="nav-bar__item title">
                 <a href="./about.html"> 
                     About us
                     <span class="line-through"></span>
                   </a>
             </div>
-            <div class="nav-bar__item heading1">
+            <div class="nav-bar__item title">
                 <a href="./portfolio.html"> 
                     Portfolio
                     <span class="line-through"></span>
                 </a>
             </div>
-            <div class="nav-bar__item heading1">
+            <div class="nav-bar__item title">
                 <a href="./services.html"> 
                     Services
                     <span class="line-through"></span>
                 </a>
             </div>
-            <div class="nav-bar__item heading1">
+            <div class="nav-bar__item title">
                 <a href="./contact.html"> 
                     Contact us
                     <span class="line-through"></span>
@@ -68,39 +68,53 @@
       <!-- First Page Menu  -->
         <div class="page-navigation">
             <ul class="page-navigation__list">
-                <li class="page-navigation__item active" data-section="homePage"><a href="#homePage">hi there</a></li>
-                <li class="page-navigation__item" data-section="about"><a href="#about">who we are</a></li>
-                <li class="page-navigation__item" data-section="portfolio"><a href="#portfolio">what we done</a></li>
-                <li class="page-navigation__item" data-section="services"><a href="#services">what we can do</a></li>
+                <li class="page-navigation__item active" data-section="homePage"> <a href="#homePage"> hi there      </a></li>
+                <li class="page-navigation__item"        data-section="about">    <a href="#about">    who we are    </a></li>
+                <li class="page-navigation__item"        data-section="portfolio"><a href="#portfolio">what we done  </a></li>
+                <li class="page-navigation__item"        data-section="services"> <a href="#services"> what we can do</a></li>
             </ul>
         </div>
     </div>
 <!-- Main Page -->
     <header>
       <a href="./index.html#homePage" id="logo">
-        <img src="./img/blacklogo.svg" />
+        <img src="./img/whitelogo.svg" />
     </a>
     </header>
     <main>
         <section class='welcome-section' id="homePage">
-          <p class='heading2'>hi there we are</p>
-          <h1 class='heading1'>sign digital studio </h1>
-          <a href="#portfolio">
-            <div class='button-container'>
-                <button class='button'>
-                  see what we do
-                </button>
-              </div>
-          </a>
+          <div class="hero-wrapper">
+            <div">
+              <p class='upTitle'>Hello there! We're a</p>
+              <h1 class='title'>de<span class="bordered-text" >sign</span> studio</h1>
+              <p class="description">
+                that specializes in giving your startup or existing business a bold, stylish, fresh, and competitive look. 
+                <br>
+                If you're skeptical about our claims, why not take a look at
+              </p>
+              <a href="#portfolio">
+                <div class='button-container'>
+                    <button class='button'>
+                      see what we do
+                    </button>
+                </div>
+                <div class="star-shape whiteStar">
+                  <img src="./img/whiteStar.png" alt="star-shape">
+                </div>
+              </a>
+            </div>
+            
+          </div>
         </section>
+        <p class="advice">keep scrolling</p>
         <section class='about-section' id="about">
           <div class='left-side'>
             <p class='heading2'>we're creative professionals driving<br/>brands to the</p>
-            <h2 class='heading1' >young & bold</h2>
+            <h2 class='title'>young & bold</h2>
             <p>Are you keeping up?</p>
             <div class='button-container'>
                 <button class='button'>
-                  schedule a call
+                  see what we do
                 </button>
             </div>
           </div>
@@ -109,11 +123,6 @@
           </div>
         </section>
         <section class='portfolio-section' id='portfolio'>
-          <div class='text-description'>
-            <p class="heading2">We will help you to</p>
-            <h2 class='heading1 mid-shrift'>build your brand</h2>
-          </div>
-          <div class='pics-container'>
             <div class='pics'>
               <a href='./portfolioConsultingGroup.html'>
                 <img src='./img/portfolio1.png' />
@@ -128,16 +137,12 @@
                 <img src='./img/portfolio4.png' />
               </a>
             </div>
-            <div class='button-container'>
-                <button class='button'>
-                  more works here
-                </button>
-            </div>
-          </div>
         </section>
         <section class='services-section' id="services">
             <p class='heading2'>we're creative rebels driving<br/>brands to the</p>
-            <h2 class='heading1 whatWeDoHeading'>what we do</h2>
+            <h2 class='title'>what we do</h2>
+            <p>Are you keeping up?</p>
+          
             <div class='lists-wrapper'>
               <div class="star-shape">
                 <img src="./img/Star.svg" alt="star-shape">
@@ -155,25 +160,19 @@
                   <li>Logo Design</li>
                 </ul>
               </div>
-              <div class="button-wrapper">
-                <div class='button-container'>
-                  <a href="./services.html">
-                  <button class='button'>
-                    see all services
-                  </button>
-                  </a>
-                </div>
-              </div>
+              <div class='button-container'>
+                <button class='button'>
+                  see all services
+                </button>
+            </div>
              </div>
             </div>
         </section>
       </main>
       <footer>
         <p>&copy; 2021 All rights reserved.Sign Digital </p>
-        <div class='social'>
-          <a href='https://www.facebook.com/Sign-2213681662203036' target="_blank">Facebook</a>
-          <a href='https://www.instagram.com/sign_digital/' target="_blank">Instagram</a>
-        </div>
+        <a class='social' href='https://www.facebook.com/Sign-2213681662203036' target="_blank">Facebook</a>
+        <a class='social' href='https://www.instagram.com/sign_digital/' target="_blank">Instagram</a>
       </footer>
       <!-- <div class="stiky-line-container">
         <a href="#homePage" id="lineA">
