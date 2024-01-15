@@ -2,20 +2,21 @@
 
 const navBar = document.querySelector('.nav-bar');
 const checkbox = document.querySelector('input[type=checkbox]');
+const siteNav = document.querySelector('.site-navigation');
 // const logo = document.querySelector('#logo');
 // const logoImg = logo.firstElementChild;
 
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     navBar.style.width = window.innerWidth + 'px';
-    // logoImg.src = "./img/whiteLogo.png";
+    siteNav.style.backgroundColor = 'black'
   } else {
-    // logoImg.src = "./img/blacklogo.svg";
+    siteNav.style.backgroundColor = 'white'
   }
 });
 
 const starImage = document.createElement("img");
-starImage.src = "./img/whiteStar.png";
+starImage.src = "./img/Star.svg";
 console.log(navBar.children[0].children[0]);
 
 switch (true) {
