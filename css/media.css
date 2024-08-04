@@ -9,29 +9,10 @@
   }
 }
 
-@media only screen and (max-width: 1560px) {
-  .heading3 {
-    font-size: 35px;
-  }
-
-  /* .info__content-title {
-    font-size: 20px ;
-  } */
-
-  .info__content-text {
-    font-size: 13px;
-  }
-}
-
-
-@media only screen and (max-width: 1460px) {
-    .heading1 {
-      font-size: 95px;
-    }
-  
-    .about-section {
+@media only screen and (max-width: 1460px) {  
+    /* .about-section {
       height: 100vh;
-    }
+    } */
 
     .whatWeDoHeading {
       text-align: center;
@@ -61,26 +42,11 @@
     
   
     @media only screen and (max-width: 1150px) {
-      .heading1 {
-        font-size: 90px;
-      }
-  
       .about-section {
         height: 100vh;
       }
   
-    .heading2 {
-      font-size: 20px;
-    }
-
-    .heading3 {
-      font-size: 30px;
-    }
-
-    .info__content-title {
-      font-size: 16px;
-    }
-  
+ 
     .nav-bar {
       padding: 47px 150%;
     }
@@ -96,14 +62,6 @@
     .pics img {
       height: auto;
     }
-  
-    .services-section {
-      padding: 170px 0;
-  }
-  
-    footer {
-      padding: 0 10%;
-    }
 
     .lists {
       gap: 100px;
@@ -113,22 +71,6 @@
   
   
   @media only screen and (max-width: 1075px) {
-    .heading1 {
-      font-size: 70px;
-    }
-  
-    .heading2 {
-      font-size: 18px;
-    }
-  
-    .mid-shrift {
-      font-size: 53px !important;
-   }
-
-   footer p {
-    font-size: 12px;
-   }
-
    .lists ul {
     margin-right: 15px; 
    }
@@ -141,19 +83,14 @@
   }
   
   
-  @media only screen and (max-width: 800px) {
-    .heading1 {
-        font-size: 48px;
-    }
-
-    .services-section {
-        padding: 170px 0 80px;
-    }
-  
+  @media only screen and (max-width: 800px) {  
     .cube-img {
       margin-bottom: 100px;
     }
   
+    .upTitle {
+      font-size: 12px;
+    }
   
     .pics {
       gap: 7px;
@@ -169,7 +106,6 @@
   @media only screen and (max-width: 640px) {
     .button {
       width: 185px;
-      font-size: 15px;
     }
   
     .button-container {
@@ -180,46 +116,80 @@
       gap: 65px;
     }
   
-    .heading1 {
-      font-size: 48px;
-    }
-  
-    .mid-shrift {
-      font-size: 41px !important;
-    }
-
     .site-navigation {
         width: 40px;
+    }
+
+    .portfolio-section {
+      width: calc(100% - 40px);
+    }
+
+    .welcome-section {
+      /* width: 100%; */
+      max-width: calc(100% - 40px);
     }
 
     :root {
         --burger-margin: 6px;
     }
-
-
-  
   }
   
   @media only screen and (max-width: 600px) {
-    .heading1 {
-        font-size: 45px;
-        text-align: center;
-        white-space: unset;
+    .burger-menu {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: var(--burger-gap);
+      position: absolute;
+      top: 47px;
+      left: var(--burger-margin);
+      z-index: 3;
+      cursor: pointer;
     }
-  
+    
+    .burger-menu::before,
+    .burger-menu::after,
+    .burger-menu input {
+      content: "";
+      width: var(--bar-width);
+      height: var(--bar-height);
+      background-color: #000;
+      transform-origin: left center;
+      border-radius: 9999px;
+      transition: opacity 500ms,
+                  width   500ms,
+                  transform 500ms,
+                  rotate 500ms;
+      mix-blend-mode: difference;
+    }
+    
+    .burger-menu input {
+      appearance: none;
+      outline: none;
+      pointer-events: none;
+      background-color: black;
+      mix-blend-mode: difference;
+    } 
+    
+    .burger-menu:has(input:checked)::before {
+      rotate: 45deg;
+      background-color: white;
+    }
+    
+    .burger-menu:has(input:checked)::after {
+      rotate: -45deg;
+      background-color: white;
+    }
+    
+    .burger-menu input:checked {
+      opacity: 0;
+      width: 0;
+    }
+
     .heading2 {
-      font-size: 16px;
       text-align: center;
   }
-  
-    footer p {
-      font-size: 12px;
-    }
-  
-    .social a {
-      font-size: 12px;
-    }
-  
+
     #logo {
       height: 30px;
     }
@@ -296,13 +266,16 @@
     padding: 0 0;
   }
 
-  .site-navigation {
-    border-left: 0;
-    background-color: transparent;
+  .welcome-section {
+    max-width: 100%;
   }
 
-  .page-navigation {
-    display: none;
+  .site-navigation {
+    visibility: hidden;
+  }
+
+  .burger-menu {
+    visibility: visible;
   }
 
   .about-section {
@@ -333,15 +306,6 @@
   @media only screen and (max-width: 375px) {
     #logo {
       height: 25px;
-  }
-  
-  
-  .heading1 {
-    font-size: 37px;
-  }
-  
-  .heading2 {
-    font-size: 14px;
   }
   
   .cube-img {

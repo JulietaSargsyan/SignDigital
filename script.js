@@ -11,7 +11,7 @@ checkbox.addEventListener('change', function() {
     navBar.style.width = window.innerWidth + 'px';
     siteNav.style.backgroundColor = 'black'
   } else {
-    siteNav.style.backgroundColor = 'white'
+    siteNav.style.backgroundColor = 'transparent'
   }
 });
 
