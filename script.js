@@ -9,6 +9,7 @@ const siteNav = document.querySelector('.site-navigation');
 checkbox.addEventListener('change', function() {
   if (this.checked) {
     navBar.style.width = window.innerWidth + 'px';
+    navBar.style.padding = window.innerWidth * 15 / 100 +'px';
     siteNav.style.backgroundColor = 'black'
   } else {
     siteNav.style.backgroundColor = 'transparent'
